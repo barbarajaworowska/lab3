@@ -13,8 +13,7 @@ and open the template in the editor.
     <body>
         <div>TODO write content</div><div>ALa ma kota</div>
         <span>ala ma kota</span><span>a kot ma ale</span>
-        <img  src="img/CB-logo-300px-x-300px-black-background-WEB.jpg" alt="czarny obrazek" width="200" height="400" />
-        <p>Dzisiaj na zajeciach <img  src="img/CB-logo-300px-x-300px-black-background-WEB.jpg" alt="czarny obrazek" width="200" height="400" hspace="5" vspace="10" align="left"/>uczymy sie intensywnie</p>
+        <p>Dzisiaj na zajeciach <img  src="img/CB-logo-300px-x-300px-black-background-WEB.jpg" alt="czarny obrazek" width="300" height="300" hspace="5" vspace="10" align="left"/>uczymy sie intensywnie</p>
 
     
     <table border ="1" cellpadding="2" cellspacing="5">
@@ -25,15 +24,45 @@ and open the template in the editor.
         </thead>
         <tbody>
             <tr>
-                <td>jeden</td><td>dwa</td><td>trzy</td>
+                <td colspan ="2">jeden dwa</td>
+                <td rowspan="2">trzy</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
             </tr>
         </tbody>
            
     </table>
-    
-    
-    
-    
-    
+        
+        <img  src="img/CB-logo-300px-x-300px-black-background-WEB.jpg" alt="czarny obrazek" width="300" height="300" usemap="#mapa_obrazka" />
+        <map name="mapa_obrazka">
+            <area shape="rect" coords="0,0,150,300" href="https://www.wp.pl/" alt="pierwsza polowa obrazka"/>
+            <area shape="rect" coords="150,0,300,300" href="https://www.onet.pl/" alt="druga polowa obrazka"/>  
+        </map>
+        
+    <form action ="" id="imie12" method="get">
+        <label for="imie">imie</label>
+            <input type="text" name="imie" id="imie" value="Basia" maxlength="4" /><br/>
+        <label for="pas1">haslo</label>    
+            <input type="password" name="pas" value="mojeimie" id="pas1"/><br/>
+       <label for="boks2">boks</label>    
+       <input type="checkbox" name="boks" id="boks2"/><br>
+        <label for="radio2">radio</label>    
+            <input type="radio" name="radio1" id="radio2"/><br/>
+        <label for="ress">resetuj</label>    
+            <input type="reset" name="res" id="ress"/><br/>
+        <label for="fil1"></label>   
+            <input type="file" name="filll" id="fil1"/><br/>
+         <label for="hidd1"></label>   
+            <input type="hidden" name="hid" id="hidd1"/><br/>
+         <label for="obr"></label>   
+            <input type="image" name="obrazek" id="obr"/><br/>
+         <label for="butt"></label>   
+            <input type="button" name="but" id="butt"/><br/>
+        <label for="wys"></label>    
+        <input type="submit" value="wyslij" id="wys"/></br>
+    </form>
+      
      </body>   
 </html>
